@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Fever</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color:yellow;
+            margin: 20px;
+        }
+        header {
+            color:blue;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        p {
+            color:black;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <center><header> Welcome to the World of Cricket</header></center>
+    <p>Cricket Fever is sweeping the globe, igniting passion and pride in every fan's heart.</p>
+    <p>From roaring stadiums to nail-biting finishes, the 2024 T20 World Cup brought the game to thrilling new heights.</p>
+    <p>This is about the T20 world cup in 2024</p>
+    <p>Stay tuned for match updates, player stats, and trivia about famous innings and unforgettable wickets!</p>
+
+
+    <style>
+        table {
+            border: 2px solid blue;
+            border-collapse:collapse ;
+            width: 80%;
+            margin: 20px auto;
+            background-color:white;
+        }
+        th, td {
+            border: 1px solid blue;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        th {
+            background-color:pink;
+        }
+        caption {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: navy;
+        }
+    </style>
+
+<body>
+    <table>
+        <caption>Top Cricketers and Their Achievements</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Role</th>
+            <th>Key Achievement</th>
+        </tr>
+        <tr>
+            <td>Rohit Sharma</td>
+            <td>38</td>
+            <td>Opening Batter</td>
+            <td>Most double centuries in ODIs</td>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>37</td>
+            <td>Top-order Batter</td>
+            <td>Fastest to 8000, 9000, 10000 ODI runs</td>
+        </tr>
+        <tr>
+            <td>Jasprit Bumrah</td>
+            <td>31</td>
+            <td>Fast Bowler</td>
+            <td>Player of the Series – T20 WC 2024</td>
+        </tr>
+        <tr>
+            <td>Shubman Gill</td>
+            <td>25</td>
+            <td>Opening Batter</td>
+            <td>Emerging star with consistent centuries</td>
+        </tr>
+        <tr>
+            <td>Hardik Pandya</td>
+            <td>31</td>
+            <td>All-rounder</td>
+            <td>Led MI in IPL 2024, explosive finisher</td>
+        </tr>
+    </table>
+
+    <style>
+        body {
+            background-color: pink;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: pink;
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .form-fields {
+            width: 60%;
+        }
+        .form-photo {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 10px;
+            color: brown;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color:black;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Register as a Cricket Fan</h2>
+    <form>
+        <div class="form-container">
+            <div class="form-fields">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <input type="submit" value="Submit">
+            </div>
+            <div class="form-photo">
+                <img src="Screenshot 2025-04-06 133139.png" ></img>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

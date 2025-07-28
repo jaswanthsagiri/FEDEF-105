@@ -1,0 +1,212 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git init
+Initialized empty Git repository in C:/Users/jaswa/OneDrive/Attachments/Desktop/skill-2/.git/
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>code .
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git init
+Reinitialized existing Git repository in C:/Users/jaswa/OneDrive/Attachments/Desktop/skill-2/.git/
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git add .
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   home.html
+
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git log --oneline
+fatal: your current branch 'master' does not have any commits yet
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git commit -m "home html commit"
+[master (root-commit) 68db916] home html commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 home.html
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git log --oneline
+68db916 (HEAD -> master) home html commit
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+* master
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch -M main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+* main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git remote add origin https://github.com/jaswanthsagiri/skill-2.git
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 383 bytes | 127.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jaswanthsagiri/skill-2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about-feature/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch about-feature
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+  about-feature
+* main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git checkout about-feature
+Switched to branch 'about-feature'
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch about-feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about-feature/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git add about-feature/
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch about-feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about-feature/about.html
+
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git commit -m "about-feature-branch"
+[about-feature 3f4a965] about-feature-branch
+ 1 file changed, 18 insertions(+)
+ create mode 100644 about-feature/about.html
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git log --online
+fatal: unrecognized argument: --online
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git log --oneline
+3f4a965 (HEAD -> about-feature) about-feature-branch
+68db916 (origin/main, main) home html commit
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git push -u origin about-feature
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 558 bytes | 111.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'about-feature' on GitHub by visiting:
+remote:      https://github.com/jaswanthsagiri/skill-2/pull/new/about-feature
+remote:
+To https://github.com/jaswanthsagiri/skill-2.git
+ * [new branch]      about-feature -> about-feature
+branch 'about-feature' set up to track 'origin/about-feature'.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+* about-feature
+  main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git checkout main
+Deletion of directory 'about-feature' failed. Should I try again? (y/n) n
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch contact-feature
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+  about-feature
+  contact-feature
+* main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact-feature/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git add "contact-feature/"
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contact-feature/contact.html
+
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git push -u origin contact-feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'contact-feature' on GitHub by visiting:
+remote:      https://github.com/jaswanthsagiri/skill-2/pull/new/contact-feature
+remote:
+To https://github.com/jaswanthsagiri/skill-2.git
+ * [new branch]      contact-feature -> contact-feature
+branch 'contact-feature' set up to track 'origin/contact-feature'.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git checkout main
+A       contact-feature/contact.html
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+  about-feature
+  contact-feature
+* main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git merge about-feature -m "merging of about-feature in main"
+Updating 68db916..3f4a965
+Fast-forward (no commit created; -m option ignored)
+ about-feature/about.html | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+ create mode 100644 about-feature/about.html
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git merge contact-feature -m "merging of contact-feature in main"
+Already up to date.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jaswanthsagiri/skill-2.git
+   68db916..3f4a965  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>git branch
+  about-feature
+  contact-feature
+* main
+
+C:\Users\jaswa\OneDrive\Attachments\Desktop\skill-2>^A
